@@ -1,0 +1,15 @@
+{
+  "name": "fortune-telling-app",
+  "version": "1.0.0",
+  "description": "八字算命网站 - 生产环境部署配置",
+  "scripts": {
+    "start:backend": "cd backend && python run.py",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy:vercel": "cd frontend && vercel --prod",
+    "test:api": "curl http://localhost:8000/health"
+  },
+  "keywords": ["fortune-telling", "bazi", "vue", "fastapi"],
+  "author": "Your Name",
+  "license": "MIT"
+}
